@@ -47,4 +47,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc PKG-INFO README
-%{py_sitedir}/*
+%{py_sitedir}/*.py*
+%attr(755,root,root) %{py_sitedir}/*.so
