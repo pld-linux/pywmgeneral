@@ -1,5 +1,5 @@
 Summary:	Python wrapper for wmgeneral functions
-Summary(pl):	Wrapper dla funkcji wmgeneral
+Summary(pl):	Pythonowy wrapper dla funkcji wmgeneral
 Name:		pywmgeneral
 Version:	0.1
 Release:	0.1
@@ -9,6 +9,7 @@ Source0:	http://errl.info/pywmdockapps/downloads/current/%{name}-%{version}.tar.
 # Source0-md5:	a393198a17f0c3f14920525cffc82669
 URL:		http://errl.info/pywmdockapps/
 BuildRequires:	/usr/bin/python
+%pyrequires_eq	python-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -18,6 +19,14 @@ wmgeneral.c and pywmgeneral just provides Python wrappers around these
 functions. The library also contains a Python part above the wrappers
 that ease up argument passing and return values. Also some other
 usable methods are provided there.
+
+%description -l pl
+Pywmgeneral to biblioteka umo¿liwiaj±ca pisanie dokletów WindowMakera
+w Pythonie. Spora czê¶æ kodu pochodzi ze starego wmgeneral.c, a
+pywmgeneral po prostu dostarcza wrappery Pythona dla tych funkcji. Ta
+biblioteka zawiera tak¿e czê¶æ pythonow± ponad tymi wrapperami,
+u³atwiaj±c± przekazywanie parametrów i zwracanych warto¶ci. Dodanych
+jest tak¿e trochê u¿ytecznych metod.
 
 %prep
 %setup -q
