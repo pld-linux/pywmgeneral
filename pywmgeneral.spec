@@ -1,5 +1,5 @@
 Summary:	Python wrapper for wmgeneral functions
-Summary(pl.UTF-8):   Pythonowy wrapper dla funkcji wmgeneral
+Summary(pl.UTF-8):	Pythonowy wrapper dla funkcji wmgeneral
 Name:		pywmgeneral
 Version:	0.1
 Release:	0.1
